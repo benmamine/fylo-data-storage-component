@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+  
+html, body {
+    box-sizing: border-box;
+    height: 100vh;
+   
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(../images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom ;
+    /*background-position-y: 115%;*/
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  .container {
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      place-items: center;
+    
+   
+  }
+  
+
+  .icons-component {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color:hsl(228, 56%, 26%);
+      padding: 2.5rem 7rem  2.5rem 2.5rem;
+      border-top-right-radius: 100px;
+      border-top-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      max-height: 200px;
+  }
+  
+  .icons {
+      display: flex;
+      
+      
+       
+
+  }
+
+  .logo {
+      padding: 10px;
+      
+  }
+
+  .icon-link {
+      margin: 10px;
+      padding: 10px;
+      background-color:hsl(229 , 57%, 11%);
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      
+  }
+
+  .storage-component {
+      display: flex;
+      flex-direction: column;
+     
+     
+      border-radius: 8px;
+      margin-left : 3rem;
+      justify-content: center;
+
+      
+      
+      
+  }
+  progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+     appearance: none;
+  
+    width: 500px;
+    
+  }
+
+  progress[value]::-webkit-progress-bar {
+    background-color: hsl(229 , 57%, 11%);
+    border-radius: 8px;
+    height: 20px;
+    
+
+  
+  }
+
+  progress[value]::-webkit-progress-value {
+    background-image:
+         -webkit-linear-gradient(left,hsl(6, 100%, 80%),hsl(335, 100%, 65%) 
+                                 );
+        
+
+      border-radius: 8px; 
+      border: 3px solid hsl(229 , 57%, 11%);
+      
+  
+  }
+
+
+
+.component {
+     background-color: hsl(228, 56%, 26%);
+     
+     padding: 2rem;
+     /* background-color: hsl(228, 56%, 26%);*/
+      border-radius: 8px;
+      margin-left : 2rem;
+}
+
+
+.component > p {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+}
+
+
+
+
+  .progress-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    padding-top: 15px;
+  }
+
+  .progress-text > p {
+    font-size: 14px;
+    color: white;
+   
+  }
+
+  .box {
+    background-color: #fff;
+  border-radius: 10px 10px 0 10px;
+  color: black;
+  max-width: 180px;
+  min-height: 60px;
+  position: relative;
+  top: 20px;
+  right :-55%;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  justify-content: center;
+
+ 
+   
+  
+  }
+
+
+  .box ::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+    
+    right: 0;
+    bottom: -19px;
+    }
+
+    .storage-left {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+      
+    .text-left {
+        color: #848794;
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        margin-left: 5px;
+      }
+      
+
+      @media only screen and (max-width: 1080px) {
+        body {
+          background-image: url(../images/bg-mobile.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        
+      
+          
+        }
+        
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .box {
+      background-color: white;
+      border-radius: 10px 10px 10 10px;
+      color: black;
+      max-width: 180px;
+      min-height: 60px;
+      /*position: relative;*/
+    
+  
+   
+     
+    
+    }
+
+    
+  .box ::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #fff transparent;
+    border-top: 10px solid #fff transparent;
+    border-bottom: 10px solid transparent;
+   
+    
+    }
+  
+    
+    }
+  
